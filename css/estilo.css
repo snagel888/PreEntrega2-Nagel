@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* reglas generales */
+
+* {
+    margin: 2px;
+    padding:2px;
+}
+
+body {
+    background-color: beige;
+    font-family: 'Montserrat';
+    position: relative;
+    padding-bottom: 3em;
+    font-weight: 600;
+}
+
+header{
+    background-image: url(../css/imagenes/header.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.logo{
+    border-radius: 200px;
+    position: relative;
+    top: 30px;
+}
+
+/* Footer */
+footer{
+   text-align: center;
+   padding-top: 25px;
+   color: aliceblue;
+   background-image: url(../css/imagenes/235.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.instagram, .twitter, .youtube, .facebook{
+    color: aliceblue;
+}
+
+.pie{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.6;
+    padding-top: 10px;
+}
+/* Footer */
+
+/* navegador viejo */
+a{
+    color: #000000;
+    display: inline;
+}
+
+a:hover {
+    color:rgb(255, 3, 3);
+}
+
+
+.navegador{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
+/* navegador viejo */
+
+/* navegador de bootstrap NUEVO */
+.navbar{
+    margin-left: 10px;
+}
+
+.navbar-brand:hover{
+    color: red;
+}
+/* navegador de bootstrap NUEVO*/
+
+li, a{
+    font-size: 25px;
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+}
+
+/* Index */
+
+h1{
+    color: white;
+    position: relative; 
+    bottom: 50px;
+    font-size: 50px;  
+    text-align: center;
+}
+
+h3{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    text-decoration: underline 2px;
+    font-weight: bold;
+}
+
+.imagenuno{
+    height: 300px;
+    padding-left: 50px;
+}
+
+.imagendos{
+    height: 300px;
+    padding-left: 50px;
+}
+
+.imagentres{
+    height: 300px;
+    padding-left: 50px;
+}
+
+.col{
+    padding-bottom: 100px;
+    padding-top: 12px;
+}
+
+.video{
+    text-align: center;
+    padding-top: 25px;
+}
+
+/* Poesía */
+.carousel-inner img {
+    margin: auto;
+    width: 200px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-style: oblique;
+    line-height: 1.6;
+}
+
+/* Literatura */
+.borges{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+/* Nosotros */
+
+main{
+    text-align: center;
+}
+
+.main{
+    font-style: normal;
+}
+
+.quienes{
+    color: black;
+    text-align:center;
+    top: 0px;
+}
+
+.whatsapp{
+    display: inline-block;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 15px;
+    left: 1800px;
+}
+
+/* Contacto */
+
+.mapa{
+    text-align: center;
+}
+
+.formulario{
+    display: inline-block;
+    position: absolute;
+    left: 5%;
+    top: 0%;
+    width: 1px;
+}
+
+.contacto{
+    position: relative;
+    height: 500px;
+}
+
+.redes{
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 0%;
+}
