@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 /* reglas generales */
-
 * {
     margin: 2px;
     padding:2px;
@@ -123,10 +122,12 @@ h3{
     padding-left: 50px;
 }
 
+/* El grid del index */
 .col{
     padding-bottom: 100px;
     padding-top: 12px;
 }
+/* El grid del index */
 
 .video{
     text-align: center;
