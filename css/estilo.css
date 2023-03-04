@@ -23,8 +23,9 @@ header{
     border-radius: 10px;
     display: flex;
     align-content: center;
-    justify-content: space-evenly;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo{
@@ -38,12 +39,15 @@ header{
 
 /* Footer */
 footer{
+    display: flex;
    text-align: center;
    padding-top: 25px;
    color: aliceblue;
    background-image: url(../css/imagenes/235.jpg);
    background-repeat: no-repeat;
    background-size: cover;
+   border-radius: 10px;
+   flex-direction: column;
 }
 
 .instagram, .twitter, .youtube, .facebook{
@@ -70,23 +74,15 @@ a:hover {
     color:rgb(255, 3, 3);
 }
 
-
-.navegador{
-    display: flex;
-    justify-content: center;
-    font-weight: 800;
-}
-/* navegador viejo */
-
 /* navegador de bootstrap NUEVO */
 .navbar{
+    display: flex;
     margin-left: 10px;
 }
 
 .navbar-brand:hover{
     color: red;
 }
-/* navegador de bootstrap NUEVO*/
 
 li, a{
     font-size: 25px;
@@ -103,7 +99,7 @@ h1{
 }
 
 h3{
-    font-size: 30px;
+    font-size: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
@@ -131,7 +127,6 @@ h3{
     padding-bottom: 100px;
     padding-top: 12px;
 }
-/* El grid del index */
 
 .video, iframe{
     display: flex;
@@ -158,8 +153,9 @@ p{
 /* Literatura */
 .borges{
     display: flex;
-    justify-content: center;
     padding-top: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Nosotros */
@@ -178,32 +174,20 @@ main{
     top: 0px;
 }
 
-.whatsapp{
-    display: inline-block;
-    position: fixed;
-    height: 50px;
-    width: 50px;
-    bottom: 15px;
-    left: 1800px;
+.whatsapp2{
+    display: flex;
+    position: sticky;
+    justify-content: flex-end;
+    height: 60px;
+    margin: 10px;
+    margin-right: 40px;
+    bottom: 0;
 }
-
 /* Contacto */
-
-.mapa{
-    text-align: center;
-}
-
-.formulario{
-    display: inline-block;
-    position: absolute;
-    left: 5%;
-    top: 0%;
-    width: 1px;
-}
-
 .contacto{
-    position: relative;
-    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .redes{

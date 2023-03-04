@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
@@ -13,32 +17,36 @@
     <header>
         <a href="../index.html"><img class="logo" src="../css/imagenes/Logo gato negro.jpg" alt="Logo gato negro" height="100px" width="100px"></a>
         <h1>Contactanos</h1>
+        <!-- Boton de ayuda -->
+        <a href="contacto.html"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+          </svg></a>
     </header>
     <!-- fin del header -->
 
-        <!-- Nav viejo que será reemplazado con Bootstrap -->
-    <div>
-        <nav>
-            <ul class="navegador">   
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/literatura.html">Literatura</a></li>
-                <li><a href="../paginas/poesia.html">Poesía</a></li>
-                <li><a href="../paginas/nosotros.html">Nosotros</a></li>
-                <li><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>   
-        </nav>
-    </div>
-    <!-- fin del nav viejo -->
+     <!-- Principio del Menu de Navegación -->
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a href="../index.html" class="navbar-brand">Home</a>
+          <a href="poesia.html" class="navbar-brand">Poesía</a>
+          <a href="literatura.html" class="navbar-brand">Literatura</a>
+          <a href="nosotros.html" class="navbar-brand">Nosotros</a>
+          <a href="contacto.html" class="navbar-brand">Contacto</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <!--Fin del Menu de Navegación -->
 
     <!-- Formulario y mapa -->
     <section class="contacto">
-        <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1178572.3491665425!2d-4.644070880287078!3d39.634757245046146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4035b57551b6f3%3A0x84be095154d712f6!2sC.%20Falsa%2C%2045908%20Aldea%20en%20Cabo%2C%20Toledo%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1675125452190!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
 
         <form class="formulario">
 
-            <h4>¡Contactanos!</h4>
+            <h2>¡Contactanos!</h2>
             <br>
             <label for="nombre">Nombre</label>
             <input type="text" placeholder="Ingrese su nombre" id="nombre">
@@ -59,15 +67,16 @@
             <input type="reset">
     
         </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1178572.3491665425!2d-4.644070880287078!3d39.634757245046146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4035b57551b6f3%3A0x84be095154d712f6!2sC.%20Falsa%2C%2045908%20Aldea%20en%20Cabo%2C%20Toledo%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1675125452190!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <!-- Fin del formulario y mapa -->
     
     <!-- Sticky de wsp -->
-    <a href="https://web.whatsapp.com/"><img class="whatsapp" src="../css/imagenes/icono de wsp.png" alt="Logo de Whatsapp"></a>
+    <a class="whatsapp2" href="https://web.whatsapp.com/"><img class="whatsapp" src="../css/imagenes/icono de wsp.png" alt="Logo de Whatsapp"></a>
 
     <!-- Comienzo del Footer -->
     <footer>
-        <p class="pie">Todos los derechos reservados</p>
+        <h3 class="pie">Todos los derechos reservados</h3>
         <div>
             <nav>
                 <a class="instagram" href="">Instagram</a>
@@ -78,6 +87,8 @@
         </div>
     </footer>
     <!-- Fin del footer -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 </html>
