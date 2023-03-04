@@ -1,0 +1,34 @@
+/* MIXIN -  (entra en la tercera entrega) Son parecidos a los extend */
+
+/* MIXIN sin parámetros */
+@mixin parrafos{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+.parrafosconestilo{
+    @include parrafos;
+
+}
+
+@mixin anclas{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* MIXIN con Parametros */
+
+@mixin parrafosconparametros($size, $alineacion){
+    font-size: $size;
+    text-align: $alineacion;
+}
+
+.parrafosconsueño{
+    @include parrafosconparametros(50px, right);
+}
+
+
+

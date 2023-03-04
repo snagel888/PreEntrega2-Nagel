@@ -1,0 +1,33 @@
+/* Footer */
+footer {
+	display: flex;
+	text-align: center;
+	padding-top: 25px;
+	color: $color_1;
+	background-image: url(../css/imagenes/235.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	flex-direction: column;
+}
+.instagram {
+	color: $color_1;
+}
+.twitter {
+	color: $color_1;
+}
+.youtube {
+	color: $color_1;
+}
+.facebook {
+	color: $color_1;
+}
+.pie {
+	font-family: $font-family_2;
+	text-align: center;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 1.6;
+	padding-top: 10px;
+}
+/* Footer */

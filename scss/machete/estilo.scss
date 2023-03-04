@@ -1,0 +1,12 @@
+/* CARACTERISTICAS DE SASS  */
+
+/* 1- Puedo anidar selectores */
+/* 2-Puedo Utilizar variables */
+/* 3- Puedo realizar operaciones matematicas */
+/* 4- Puedo trabajar con archivos parciales(partials). Siempre comienzan con guion bajo */
+/* Lo mejor es tener los imports en el estilo.scss y trabajar por separado */
+@import "variables";
+@import "header";
+
+
+

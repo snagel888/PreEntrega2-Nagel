@@ -1,198 +1,231 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@charset "UTF-8";
+/* reglas generales */
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+* {
+  margin: 2px;
+  padding: 2px;
+}
 
 /* reglas generales */
-* {
-    margin: 2px;
-    padding:2px;
-}
-
 body {
-    background-color: beige;
-    font-family: 'Montserrat';
-    position: relative;
-    padding-bottom: 3em;
-    font-weight: 600;
+  background-color: beige;
+  font-family: "Montserrat";
+  position: relative;
+  padding-bottom: 3em;
+  font-weight: 600;
 }
 
-header{
-    background-image: url(../css/imagenes/header.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    margin: 10px;
-    border-radius: 10px;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+a {
+  color: #000000;
+  display: inline;
+  font-size: 25px;
+  text-decoration: none;
+  list-style: none;
+  display: inline;
 }
-
-.logo{
-    display: flex;
-    border-radius: 200px;
-    position: static;
-    width: 100px;
-    height: 100px;
-    
-}
-
-/* Footer */
-footer{
-    display: flex;
-   text-align: center;
-   padding-top: 25px;
-   color: aliceblue;
-   background-image: url(../css/imagenes/235.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   border-radius: 10px;
-   flex-direction: column;
-}
-
-.instagram, .twitter, .youtube, .facebook{
-    color: aliceblue;
-}
-
-.pie{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 1.6;
-    padding-top: 10px;
-}
-/* Footer */
-
-/* navegador viejo */
-a{
-    color: #000000;
-    display: inline;
-}
-
 a:hover {
-    color:rgb(255, 3, 3);
+  color: rgb(255, 3, 3);
 }
 
-/* navegador de bootstrap NUEVO */
-.navbar{
-    display: flex;
-    margin-left: 10px;
+/* navegador de bootstrap*/
+.navbar {
+  display: flex;
+  margin-left: 10px;
 }
 
-.navbar-brand:hover{
-    color: red;
+.navbar-brand:hover {
+  color: red;
 }
 
-li, a{
-    font-size: 25px;
-    text-decoration: none;
-    list-style: none;
-    display: inline;
+/* navegador de bootstrap*/
+h2 {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  text-decoration: underline 2px;
+  font-weight: bold;
 }
 
-/* Index */
-
-h1{
-    color: white;
-    align-self: center;
+.h2decontactanos {
+  position: relative;
+  top: 50px;
 }
 
-h3{
-    font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-    text-decoration: underline 2px;
-    font-weight: bold;
+h3 {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  text-decoration: underline 2px;
+  font-weight: bold;
 }
 
-.imagenuno{
-    height: 300px;
-    padding-left: 50px;
+/* Imagenes del Index */
+.imagenuno {
+  height: 300px;
+  padding-left: 50px;
 }
 
-.imagendos{
-    height: 300px;
-    padding-left: 50px;
+.imagendos {
+  height: 300px;
+  padding-left: 50px;
 }
 
-.imagentres{
-    height: 300px;
-    padding-left: 50px;
+.imagentres {
+  height: 300px;
+  padding-left: 50px;
 }
 
+/* Imagenes del Index */
 /* El grid del index */
-.col{
-    padding-bottom: 100px;
-    padding-top: 12px;
+.col {
+  padding-bottom: 100px;
+  padding-top: 12px;
 }
 
-.video, iframe{
-    display: flex;
-    padding-top: 25px;
-    align-self: center;
-    justify-content: center;
+/* Video del Index y Mapa de pagina de Contacto */
+.video {
+  display: flex;
+  padding-top: 25px;
+  align-self: center;
+  justify-content: center;
 }
 
+iframe {
+  display: flex;
+  padding-top: 25px;
+  align-self: center;
+  justify-content: center;
+}
+
+/* Pagina Literatura */
+.carousel-inner img {
+  margin: auto;
+  width: 200px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-style: oblique;
+  line-height: 1.6;
+}
+
+/* Fin Pagina Literatura */
+/* Poesía */
+.borges {
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Poesía */
-.carousel-inner img {
-    margin: auto;
-    width: 200px;
-}
-
-p{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-weight: 500;
-    font-style: oblique;
-    line-height: 1.6;
-}
-
-/* Literatura */
-.borges{
-    display: flex;
-    padding-top: 30px;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Nosotros */
-
-main{
-    text-align: center;
+.quienes {
+  color: black;
+  text-align: center;
+  top: 0px;
 }
 
-.main{
-    font-style: normal;
+/* Fin de Nosotros */
+/* Sticky de Whatsapp */
+.whatsapp2 {
+  display: flex;
+  position: sticky;
+  justify-content: flex-end;
+  height: 60px;
+  margin: 10px;
+  margin-right: 40px;
+  bottom: 0;
 }
 
-.quienes{
-    color: black;
-    text-align:center;
-    top: 0px;
+/* Pagina de Contacto */
+.contacto {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.whatsapp2{
-    display: flex;
-    position: sticky;
-    justify-content: flex-end;
-    height: 60px;
-    margin: 10px;
-    margin-right: 40px;
-    bottom: 0;
-}
-/* Contacto */
-.contacto{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+/* Fin de pagina de Contacto */
+/* Header */
+header {
+  background-image: url(../css/imagenes/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.redes{
-    display: inline-block;
-    position: absolute;
-    right: 10%;
-    top: 0%;
+.logo {
+  display: flex;
+  border-radius: 200px;
+  position: static;
+  width: 100px;
+  height: 100px;
 }
+
+h1 {
+  color: white;
+  align-self: center;
+}
+
+/* Logo de ayuda */
+.bi {
+  color: white;
+}
+
+.bi:hover {
+  color: black;
+}
+
+/* Fin de Header */
+/* Footer */
+footer {
+  display: flex;
+  text-align: center;
+  padding-top: 25px;
+  color: aliceblue;
+  background-image: url(../css/imagenes/235.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.instagram {
+  color: aliceblue;
+}
+
+.twitter {
+  color: aliceblue;
+}
+
+.youtube {
+  color: aliceblue;
+}
+
+.facebook {
+  color: aliceblue;
+}
+
+.pie {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.6;
+  padding-top: 10px;
+}
+
+/* Footer */
+
+/*# sourceMappingURL=estilo.css.map */

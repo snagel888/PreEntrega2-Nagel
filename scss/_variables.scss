@@ -1,0 +1,20 @@
+/* reglas generales */
+* {
+	margin: 2px;
+	padding: 2px;
+}
+
+$color_1: aliceblue;
+$color_2: #000000;
+$color_3: rgb(255, 3, 3);
+$color_4: red;
+$color_5: white;
+$color_6: black;
+$font-family_1: 'Montserrat';
+$font-family_2: 'Roboto', sans-serif;
+$background-color_1: beige;
+
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+
+/* reglas generales */

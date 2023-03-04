@@ -1,0 +1,21 @@
+/* MAPS */
+
+$mapredes: (facebook:red, instagram:blue, twitter: green);
+
+@each $redsocial, $colorredsocial in $mapredes{
+    .#{$redsocial}{
+        color: $colorredsocial;
+    }
+}
+
+/* MAP - GET */
+
+$estilo:(color:red, tamfuente: 30px);
+
+.firulais{
+    background-color: map-get($map: $estilo, $key: color);
+    font-size: map-get($map: $estilo
+    , $key: tamfuente);
+    width: 150px;
+    height: 150px;
+}
