@@ -16,24 +16,15 @@ body {
   font-weight: 600;
 }
 
-a {
-  color: #000000;
-  display: inline;
-  font-size: 25px;
-  text-decoration: none;
-  list-style: none;
-  display: inline;
-}
-a:hover {
-  color: rgb(255, 3, 3);
-}
-
 /* navegador de bootstrap*/
 .navbar {
   display: flex;
   margin-left: 10px;
 }
 
+.navbar-brand {
+  text-decoration: underline;
+}
 .navbar-brand:hover {
   color: red;
 }
@@ -165,14 +156,18 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  height: 170px;
 }
 
 .logo {
   display: flex;
   border-radius: 200px;
-  position: static;
+  position: relative;
   width: 100px;
   height: 100px;
+  left: 30px;
+  animation-name: animacion;
+  animation-iteration-count: infinite;
 }
 
 h1 {
@@ -183,6 +178,8 @@ h1 {
 /* Logo de ayuda */
 .bi {
   color: white;
+  position: relative;
+  right: 30px;
 }
 
 .bi:hover {

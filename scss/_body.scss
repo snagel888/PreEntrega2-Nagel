@@ -5,23 +5,13 @@ body {
 	padding-bottom: 3em;
 	font-weight: 600;
 }
-a {
-	color: $color_2;
-	display: inline;
-	font-size: 25px;
-	text-decoration: none;
-	list-style: none;
-	display: inline;
-	&:hover {
-		color: $color_3;
-	}
-}
 /* navegador de bootstrap*/
 .navbar {
 	display: flex;
 	margin-left: 10px;
 }
 .navbar-brand {
+	text-decoration: underline;
 	&:hover {
 		color: $color_4;
 	}

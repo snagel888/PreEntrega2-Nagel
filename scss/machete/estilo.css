@@ -1,0 +1,137 @@
+.item{
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+/* Gradientes */
+/* Son Fondos en degrade que pueden ser Lineales o Radiales */
+
+/* LINEAL (desde la izquierda hasta la derecha) */
+/* to right, bottom, top y left */
+/* to top right va en diagonal */
+
+.cajaA{
+    background: linear-gradient(to right, #45b39d, #5f7e78 );
+}
+
+.cajaB{
+    background-image: linear-gradient(to left, #e96443, #904e95);
+}
+
+/* RADIAL */
+
+.cajaC{
+    background-image: radial-gradient(#28c0e4,#d7d2cc);
+}
+
+/* TRANSFORMACIONES */
+/* Una transformacion es una modificacion en la forma en que se VE un elemento pero no el lugar que ocupa (parecido al position pero con efectos visuales) */
+
+/* Podemos mover un elemento, escalar su tamaño, girarlo, etc */
+/* TRASLADAR UN ELEMENTO */
+
+.caja1{
+    background-color: red;
+    transform: translate(20px, 10px);
+}
+
+/* ROTAR un elemento (se trabaja en grados)*/
+
+.caja2{
+    background-color: #5f7e78;
+    transform: rotate(50deg);
+}
+
+/* ESCALAR UN ELEMENTO */
+/* Admite dos valores separados por coma. El primer valor es el ancho(eje x), el segundo es el alto(eje y), valores mayores a 1 agrandan, valores entre 1 y 0 achican */
+.caja3{
+    background-color: orange;
+    transform: scale(1.2,0.8);
+}
+
+/* SESGAR UN ELEMENTO */
+
+.caja4{
+    background-color: #904e95;
+    transform: skew(10deg, 20deg);
+}
+
+/* TRANSICIONES */
+
+/* Las pseudo-clases nos permiten aplicar estilos a determinados elementos dependiendo de algunos factores externos (ej:hover) */
+
+/* EJEMPLOS */
+
+.divuno{
+    background-color: #5f7e78;
+    transition: all 2s;
+}
+
+.divuno:hover{
+    background-color: #e96443;
+    height: 320px;
+    width: 320px;
+    /* transition: all 2s; */
+}
+
+.divdos{
+background-color: #28c0e4;
+/* background-image: url(); */
+filter: grayscale(90%);
+}
+/* le podes poner una imagen */
+.divdos:hover{
+    filter: grayscale(10%);
+}
+
+
+/* ANIMACIONES */
+/* Una animacion es un efecto que se loopea tantas veces como uno quiera */
+/* No depende de un cambio de estado, el elemento se animara desde que se carga la web */
+
+@keyframes animacion{
+    0%{
+        width: 220px;
+    }
+    25%{
+        width: 240px;
+    }
+    50%{
+        width: 260px;
+    }
+    75%{
+        width: 280px;
+    }
+    100%{
+        width: 300px;
+    }
+}
+
+.logo{
+    background-color: aquamarine;
+    /* EL NOMBRE DEL KEYFRAME */
+    animation-name: animacion;
+    /* Cantidad de repeticiones */
+    animation-iteration-count: infinite;
+    /* Duracion de la animacion */
+    animation-duration: 2s;   
+}
+
+/* EJEMPLO CON TEXTO */
+
+@keyframes texto{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+h1{
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
