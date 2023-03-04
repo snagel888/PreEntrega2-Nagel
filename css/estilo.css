@@ -21,12 +21,19 @@ header{
     background-size:cover;
     margin: 10px;
     border-radius: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .logo{
+    display: flex;
     border-radius: 200px;
-    position: relative;
-    top: 30px;
+    position: static;
+    width: 100px;
+    height: 100px;
+    
 }
 
 /* Footer */
@@ -92,10 +99,7 @@ li, a{
 
 h1{
     color: white;
-    position: relative; 
-    bottom: 50px;
-    font-size: 50px;  
-    text-align: center;
+    align-self: center;
 }
 
 h3{
@@ -129,10 +133,13 @@ h3{
 }
 /* El grid del index */
 
-.video{
-    text-align: center;
+.video, iframe{
+    display: flex;
     padding-top: 25px;
+    align-self: center;
+    justify-content: center;
 }
+
 
 /* Poesía */
 .carousel-inner img {
