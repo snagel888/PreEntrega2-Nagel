@@ -151,7 +151,7 @@ header {
   height: 170px;
   /* Logo de ayuda */
 }
-header .logo {
+header .animate__animated {
   display: flex;
   border-radius: 200px;
   position: relative;
