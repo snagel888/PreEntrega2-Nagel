@@ -4,76 +4,67 @@ body {
 	position: relative;
 	padding-bottom: 3em;
 	font-weight: 600;
+	/* Sticky de Whatsapp */
+.whatsapp2 {
+	display: flex;
+	position: sticky;
+	justify-content: flex-end;
+	height: 60px;
+	margin: 10px;
+	margin-right: 40px;
+	bottom: 0;
+}
 }
 /* navegador de bootstrap*/
 .navbar {
 	display: flex;
 	margin-left: 10px;
-}
+
 .navbar-brand {
 	text-decoration: underline;
 	&:hover {
 		color: $color_4;
 	}
 }
-/* navegador de bootstrap*/
-/* (el h1 está en el Header) */
-h2 {
-	font-size: 20px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	text-align: center;
-	text-decoration: underline 2px;
-	font-weight: bold;
 }
-.h2decontactanos{
-	position: relative;
-	top: 50px;
-}
-h3 {
-	font-size: 20px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	text-align: center;
-	text-decoration: underline 2px;
-	font-weight: bold;
-}
-/* (el h1 está en el Header) */
-/* Imagenes del Index */
-.imagenuno {
-	height: 300px;
-	padding-left: 50px;
-}
-.imagendos {
-	height: 300px;
-	padding-left: 50px;
-}
-.imagentres {
-	height: 300px;
-	padding-left: 50px;
-}
-/* Imagenes del Index */
+/* fin navegador de bootstrap*/
 
-/* El grid del index */
-.col {
-	padding-bottom: 100px;
-	padding-top: 12px;
+/* Grid + Imagenes del Index + h2 de Section*/
+section{
+	h2 {
+		@include h2yh3;
+	}
+	.imagenuno {
+		@include imagenesindex;
+	}
+	.imagendos {
+		@include imagenesindex;
+	}
+	.imagentres {
+		@include imagenesindex;
+	}
+	.col {
+		padding-bottom: 100px;
+		padding-top: 12px;
+	}
 }
+/* (el h1 está en el Header) */
+
+/* h3 */
+h3 {
+	@include h2yh3;
+}
+
 /* Video del Index y Mapa de pagina de Contacto */
 .video {
-	display: flex;
-	padding-top: 25px;
-	align-self: center;
-	justify-content: center;
-}
+	@include videoindex;
 iframe {
-	display: flex;
-	padding-top: 25px;
-	align-self: center;
-	justify-content: center;
+	@include videoindex;
 }
-/* Pagina Literatura */
-.carousel-inner {
+}
+
+/* Pagina Poesía (no puedo solucionar lo del salto del carousel)*/
+.carousel-item {
 	img {
 		margin: auto;
 		width: 200px;
@@ -86,36 +77,35 @@ p {
 	font-style: oblique;
 	line-height: 1.6;
 }
-/* Fin Pagina Literatura */
-/* Poesía */
+/* Fin Pagina Poesía */
+
+/* Literatura */
 .borges {
-	display: flex;
-	padding-top: 30px;
-	align-items: center;
-	justify-content: center;
+	@include videoindex;
 }
-/* Poesía */
+/* Literatura */
+
 /* Nosotros */
-.quienes {
-	color: $color_6;
-	text-align: center;
-	top: 0px;
-}
+
 /* Fin de Nosotros */
-/* Sticky de Whatsapp */
-.whatsapp2 {
-	display: flex;
-	position: sticky;
-	justify-content: flex-end;
-	height: 60px;
-	margin: 10px;
-	margin-right: 40px;
-	bottom: 0;
-}
+
 /* Pagina de Contacto */
 .contacto {
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+
+	form{
+		margin: 30px;
+	}
+
+	.h2decontactanos{
+		position: relative;
+		top:0px;
+	}
+	.btn{
+		position: relative;
+		top: 20px;
+	}
 }
 /* Fin de pagina de Contacto */

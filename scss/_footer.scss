@@ -9,25 +9,16 @@ footer {
 	background-size: cover;
 	border-radius: 10px;
 	flex-direction: column;
-}
-.instagram {
-	color: $color_1;
-}
-.twitter {
-	color: $color_1;
-}
-.youtube {
-	color: $color_1;
-}
-.facebook {
-	color: $color_1;
-}
-.pie {
+	p {
 	font-family: $font-family_2;
 	text-align: center;
 	font-weight: 600;
 	font-style: normal;
 	line-height: 1.6;
 	padding-top: 10px;
+	}
+	a {
+	color: $color_1;
+}
 }
 /* Footer */

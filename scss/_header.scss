@@ -11,7 +11,6 @@ header {
 	align-items: center;
 	flex-wrap: wrap;
 	height: 170px;
-}
 
 .logo {
 	display: flex;
@@ -20,11 +19,8 @@ header {
 	width: 100px;
 	height: 100px;
 	left: 30px;
-	animation-name: animacion;
     animation-iteration-count: infinite;
 }
-
-
 h1 {
 	color: $color_5;
 	align-self: center;
@@ -37,5 +33,6 @@ h1 {
 }
 .bi:hover{
 	color: black;
+}
 }
 /* Fin de Header */

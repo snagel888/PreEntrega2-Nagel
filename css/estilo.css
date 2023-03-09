@@ -7,6 +7,7 @@
   padding: 2px;
 }
 
+@keyframes animacion {}
 /* reglas generales */
 body {
   background-color: beige;
@@ -14,6 +15,16 @@ body {
   position: relative;
   padding-bottom: 3em;
   font-weight: 600;
+  /* Sticky de Whatsapp */
+}
+body .whatsapp2 {
+  display: flex;
+  position: sticky;
+  justify-content: flex-end;
+  height: 60px;
+  margin: 10px;
+  margin-right: 40px;
+  bottom: 0;
 }
 
 /* navegador de bootstrap*/
@@ -21,17 +32,16 @@ body {
   display: flex;
   margin-left: 10px;
 }
-
-.navbar-brand {
+.navbar .navbar-brand {
   text-decoration: underline;
 }
-.navbar-brand:hover {
+.navbar .navbar-brand:hover {
   color: red;
 }
 
-/* navegador de bootstrap*/
-/* (el h1 está en el Header) */
-h2 {
+/* fin navegador de bootstrap*/
+/* Grid + Imagenes del Index + h2 de Section*/
+section h2 {
   font-size: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -39,12 +49,25 @@ h2 {
   text-decoration: underline 2px;
   font-weight: bold;
 }
-
-.h2decontactanos {
-  position: relative;
-  top: 50px;
+section .imagenuno {
+  height: 300px;
+  padding-left: 50px;
+}
+section .imagendos {
+  height: 300px;
+  padding-left: 50px;
+}
+section .imagentres {
+  height: 300px;
+  padding-left: 50px;
+}
+section .col {
+  padding-bottom: 100px;
+  padding-top: 12px;
 }
 
+/* (el h1 está en el Header) */
+/* h3 */
 h3 {
   font-size: 20px;
   padding-top: 30px;
@@ -54,47 +77,22 @@ h3 {
   font-weight: bold;
 }
 
-/* (el h1 está en el Header) */
-/* Imagenes del Index */
-.imagenuno {
-  height: 300px;
-  padding-left: 50px;
-}
-
-.imagendos {
-  height: 300px;
-  padding-left: 50px;
-}
-
-.imagentres {
-  height: 300px;
-  padding-left: 50px;
-}
-
-/* Imagenes del Index */
-/* El grid del index */
-.col {
-  padding-bottom: 100px;
-  padding-top: 12px;
-}
-
 /* Video del Index y Mapa de pagina de Contacto */
 .video {
   display: flex;
-  padding-top: 25px;
+  padding-top: 30px;
   align-self: center;
   justify-content: center;
 }
-
-iframe {
+.video iframe {
   display: flex;
-  padding-top: 25px;
+  padding-top: 30px;
   align-self: center;
   justify-content: center;
 }
 
-/* Pagina Literatura */
-.carousel-inner img {
+/* Pagina Poesía (no puedo solucionar lo del salto del carousel)*/
+.carousel-item img {
   margin: auto;
   width: 200px;
 }
@@ -107,40 +105,34 @@ p {
   line-height: 1.6;
 }
 
-/* Fin Pagina Literatura */
-/* Poesía */
+/* Fin Pagina Poesía */
+/* Literatura */
 .borges {
   display: flex;
   padding-top: 30px;
-  align-items: center;
+  align-self: center;
   justify-content: center;
 }
 
-/* Poesía */
+/* Literatura */
 /* Nosotros */
-.quienes {
-  color: black;
-  text-align: center;
-  top: 0px;
-}
-
 /* Fin de Nosotros */
-/* Sticky de Whatsapp */
-.whatsapp2 {
-  display: flex;
-  position: sticky;
-  justify-content: flex-end;
-  height: 60px;
-  margin: 10px;
-  margin-right: 40px;
-  bottom: 0;
-}
-
 /* Pagina de Contacto */
 .contacto {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.contacto form {
+  margin: 30px;
+}
+.contacto .h2decontactanos {
+  position: relative;
+  top: 0px;
+}
+.contacto .btn {
+  position: relative;
+  top: 20px;
 }
 
 /* Fin de pagina de Contacto */
@@ -157,32 +149,27 @@ header {
   align-items: center;
   flex-wrap: wrap;
   height: 170px;
+  /* Logo de ayuda */
 }
-
-.logo {
+header .logo {
   display: flex;
   border-radius: 200px;
   position: relative;
   width: 100px;
   height: 100px;
   left: 30px;
-  animation-name: animacion;
   animation-iteration-count: infinite;
 }
-
-h1 {
+header h1 {
   color: white;
   align-self: center;
 }
-
-/* Logo de ayuda */
-.bi {
+header .bi {
   color: white;
   position: relative;
   right: 30px;
 }
-
-.bi:hover {
+header .bi:hover {
   color: black;
 }
 
@@ -199,30 +186,16 @@ footer {
   border-radius: 10px;
   flex-direction: column;
 }
-
-.instagram {
-  color: aliceblue;
-}
-
-.twitter {
-  color: aliceblue;
-}
-
-.youtube {
-  color: aliceblue;
-}
-
-.facebook {
-  color: aliceblue;
-}
-
-.pie {
+footer p {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 600;
   font-style: normal;
   line-height: 1.6;
   padding-top: 10px;
+}
+footer a {
+  color: aliceblue;
 }
 
 /* Footer */
