@@ -12,27 +12,31 @@ header {
 	flex-wrap: wrap;
 	height: 170px;
 
-.animate__animated{
-	display: flex;
-	border-radius: 200px;
-	position: relative;
-	width: 100px;
-	height: 100px;
-	left: 30px;
-    animation-iteration-count: infinite;
+	.animate__animated {
+		display: flex;
+		border-radius: 200px;
+		position: relative;
+		width: 100px;
+		height: 100px;
+		left: 30px;
+		animation-iteration-count: infinite;
+	}
+
+	h1 {
+		color: $color_5;
+		align-self: center;
+	}
+
+	/* Logo de ayuda */
+	.bi {
+		color: white;
+		position: relative;
+		right: 30px;
+	}
+
+	.bi:hover {
+		color: black;
+	}
 }
-h1 {
-	color: $color_5;
-	align-self: center;
-}
-/* Logo de ayuda */
-.bi{
-	color: white;
-	position: relative;
-	right: 30px;
-}
-.bi:hover{
-	color: black;
-}
-}
+
 /* Fin de Header */
