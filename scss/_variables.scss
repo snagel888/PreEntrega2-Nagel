@@ -12,7 +12,7 @@ $color_5: white;
 $color_6: black;
 $font-family_1: 'Montserrat';
 $font-family_2: 'Roboto', sans-serif;
-$background-color_1: beige;
+
 
 @mixin imagenesindex{
 	height: 300px;
@@ -29,7 +29,6 @@ $background-color_1: beige;
 }
 @mixin videoindex{
 	display: flex;
-	padding-top: 30px;
 	align-self: center;
 	justify-content: center;
 }

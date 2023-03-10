@@ -10,7 +10,7 @@
 @keyframes animacion {}
 /* reglas generales */
 body {
-  background-color: beige;
+  background: linear-gradient(to right, #E0EAFC, rgb(168, 60, 60));
   font-family: "Montserrat";
   position: relative;
   padding-bottom: 3em;
@@ -27,6 +27,25 @@ body .whatsapp2 {
   bottom: 0;
 }
 
+main {
+  margin-top: 25px;
+}
+main p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.6;
+}
+main a {
+  text-decoration: underline;
+  color: black;
+}
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* navegador de bootstrap*/
 .navbar {
   display: flex;
@@ -41,7 +60,7 @@ body .whatsapp2 {
 
 /* fin navegador de bootstrap*/
 /* Grid + Imagenes del Index + h2 de Section*/
-section h2 {
+.grid h2 {
   font-size: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -49,19 +68,11 @@ section h2 {
   text-decoration: underline 2px;
   font-weight: bold;
 }
-section .imagenuno {
+.grid img {
   height: 300px;
   padding-left: 50px;
 }
-section .imagendos {
-  height: 300px;
-  padding-left: 50px;
-}
-section .imagentres {
-  height: 300px;
-  padding-left: 50px;
-}
-section .col {
+.grid .col {
   padding-bottom: 100px;
   padding-top: 12px;
 }
@@ -80,13 +91,11 @@ h3 {
 /* Video del Index y Mapa de pagina de Contacto */
 .video {
   display: flex;
-  padding-top: 30px;
   align-self: center;
   justify-content: center;
 }
 .video iframe {
   display: flex;
-  padding-top: 30px;
   align-self: center;
   justify-content: center;
 }
@@ -103,20 +112,52 @@ p {
   font-weight: 500;
   font-style: oblique;
   line-height: 1.6;
+  margin-top: 25px;
+}
+
+.autor {
+  text-decoration: none;
+  font-style: italic;
+}
+
+.caligrama {
+  max-width: 100%;
+  height: auto;
+  width: 400px;
+  margin-top: 25px;
 }
 
 /* Fin Pagina Poesía */
 /* Literatura */
-.borges {
-  display: flex;
-  padding-top: 30px;
-  align-self: center;
-  justify-content: center;
+.literaturamoderna h2 {
+  text-align: center;
+  font-size: medium;
+  font-weight: 1000;
+  margin-top: 25px;
+}
+.literaturamoderna img {
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+}
+.literaturamoderna h4 {
+  text-align: center;
+  font-size: medium;
+  font-weight: 1000;
+  margin-top: 25px;
 }
 
-/* Literatura */
-/* Nosotros */
-/* Fin de Nosotros */
+.policiales h4 {
+  text-align: center;
+  font-size: medium;
+  font-weight: 1000;
+  margin-top: 25px;
+}
+.policiales img {
+  height: 300px;
+}
+
+/* Fin de Literatura */
 /* Pagina de Contacto */
 .contacto {
   display: flex;
@@ -125,6 +166,8 @@ p {
 }
 .contacto form {
   margin: 30px;
+  background-color: #E0EAFC;
+  border-radius: 20px;
 }
 .contacto .h2decontactanos {
   position: relative;
