@@ -166,7 +166,7 @@ p {
 }
 .contacto form {
   margin: 30px;
-  background-color: #E0EAFC;
+  background: linear-gradient(to right, #da8d8d, rgb(240, 155, 155));
   border-radius: 20px;
 }
 .contacto .h2decontactanos {
