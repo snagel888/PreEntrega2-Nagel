@@ -7,7 +7,7 @@
   padding: 2px;
 }
 
-@keyframes animacion {}
+/* @keyframes animacion {} */
 /* reglas generales */
 body {
   background: linear-gradient(to right, #E0EAFC, rgb(168, 60, 60));
