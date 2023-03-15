@@ -27,21 +27,17 @@ body .whatsapp2 {
   bottom: 0;
 }
 
-main {
-  margin-top: 25px;
-}
-main p {
+.secconinfo p {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 500;
   font-style: normal;
   line-height: 1.6;
 }
-main a {
-  text-decoration: underline;
-  color: black;
+.secconinfo div {
+  text-align: center;
 }
-main img {
+.secconinfo img {
   max-width: 100%;
   height: auto;
 }
@@ -52,10 +48,13 @@ main img {
   margin-left: 10px;
 }
 .navbar .navbar-brand {
+  background: linear-gradient(to right, #E0EAFC, rgb(168, 60, 60));
   text-decoration: underline;
+  border-radius: 10px;
 }
 .navbar .navbar-brand:hover {
   color: red;
+  background: black;
 }
 
 /* fin navegador de bootstrap*/
@@ -245,6 +244,12 @@ footer p {
 }
 footer a {
   color: aliceblue;
+}
+footer a {
+  text-decoration: underline;
+}
+footer a:hover {
+  color: red;
 }
 
 /* Footer */
