@@ -100,10 +100,12 @@ h3 {
   justify-content: center;
 }
 
-/* Pagina Poesía (no puedo solucionar lo del salto del carousel)*/
+/* Pagina Poesía*/
 .carousel-item img {
   margin: auto;
-  width: 200px;
+  max-width: 400px;
+  max-height: 400px;
+  height: 300px;
 }
 
 p {
@@ -154,7 +156,9 @@ p {
   margin-top: 25px;
 }
 .policiales img {
-  height: 300px;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
 }
 
 /* Fin de Literatura */
@@ -202,6 +206,7 @@ header .animate__animated {
   height: 100px;
   left: 30px;
   animation-iteration-count: infinite;
+  margin-right: 20px;
 }
 header h1 {
   color: white;
@@ -211,6 +216,7 @@ header .bi {
   color: white;
   position: relative;
   right: 30px;
+  margin-left: 20px;
 }
 header .bi:hover {
   color: black;

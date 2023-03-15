@@ -77,11 +77,13 @@ iframe {
 }
 }
 
-/* Pagina Poesía (no puedo solucionar lo del salto del carousel)*/
+/* Pagina Poesía*/
 .carousel-item {
 	img {
 		margin: auto;
-		width: 200px;
+		max-width: 400px;
+		max-height: 400px;
+		height: 300px;
 	}
 }
 p {
@@ -138,7 +140,9 @@ p {
 		margin-top: 25px;	
 	}
 	img{
-		height: 300px;
+		max-width: 100%;
+		height: auto;
+		max-height: 400px;
 	}
 }
 
