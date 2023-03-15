@@ -27,21 +27,6 @@ body .whatsapp2 {
   bottom: 0;
 }
 
-.secconinfo p {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 1.6;
-}
-.secconinfo div {
-  text-align: center;
-}
-.secconinfo img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* navegador de bootstrap*/
 .navbar {
   display: flex;
@@ -58,6 +43,19 @@ body .whatsapp2 {
 }
 
 /* fin navegador de bootstrap*/
+/* Comienzo del Index */
+main p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.6;
+}
+main a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Grid + Imagenes del Index + h2 de Section*/
 .grid h2 {
   font-size: 20px;
@@ -76,7 +74,8 @@ body .whatsapp2 {
   padding-top: 12px;
 }
 
-/* (el h1 está en el Header) */
+/* Fin del Index */
+/* (el h1 está en _header) */
 /* h3 */
 h3 {
   font-size: 20px;
@@ -161,6 +160,23 @@ p {
 }
 
 /* Fin de Literatura */
+/* Pagina de Contacto */
+.secconinfo p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.6;
+}
+.secconinfo div {
+  text-align: center;
+}
+.secconinfo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fin de pagina de contacto */
 /* Pagina de Contacto */
 .contacto {
   display: flex;
