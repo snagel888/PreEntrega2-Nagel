@@ -1,63 +1,69 @@
 body {
-	background: linear-gradient(to right, #E0EAFC, rgb(168, 60, 60) );
+	background: linear-gradient(to right, #E0EAFC, rgb(168, 60, 60));
 	font-family: $font-family_1;
 	position: relative;
 	padding-bottom: 3em;
 	font-weight: 600;
-	/* Sticky de Whatsapp */
-.whatsapp2 {
-	display: flex;
-	position: sticky;
-	justify-content: flex-end;
-	height: 60px;
-	margin: 10px;
-	margin-right: 40px;
-	bottom: 0;
 
-}
+	/* Sticky de Whatsapp */
+	.whatsapp2 {
+		display: flex;
+		position: sticky;
+		justify-content: flex-end;
+		height: 60px;
+		margin: 10px;
+		margin-right: 40px;
+		bottom: 0;
+
+	}
 }
 
 /* navegador de bootstrap*/
 .navbar {
 	display: flex;
 	margin-left: 10px;
-	
-.navbar-brand {
-	background: linear-gradient(to right, #E0EAFC, rgb(168, 60, 60) );
-	text-decoration: underline;
-	border-radius: 10px;
-	&:hover {
-		color: $color_4;
-		background: black;
+
+	.navbar-brand {
+		background: linear-gradient(to right, #E0EAFC, rgb(168, 60, 60));
+		text-decoration: underline;
+		border-radius: 10px;
+
+		&:hover {
+			color: $color_4;
+			background: black;
+		}
 	}
 }
-}
+
 /* fin navegador de bootstrap*/
 
 /* Comienzo del Index */
 
-main{
-	p{
-	font-family: $font-family_2;
-	text-align: center;
-	font-weight: 500;
-	font-style: normal;
-	line-height: 1.6;
+main {
+	p {
+		font-family: $font-family_2;
+		text-align: center;
+		font-weight: 500;
+		font-style: normal;
+		line-height: 1.6;
 	}
-	a{
+
+	a {
 		text-decoration: none;
-		color: black;	
+		color: black;
 	}
 }
 
 /* Grid + Imagenes del Index + h2 de Section*/
-.grid{
+.grid {
 	h2 {
 		@include h2yh3;
 	}
+
 	img {
 		@include imagenesindex;
 	}
+
 	.col {
 		padding-bottom: 100px;
 		padding-top: 12px;
@@ -76,9 +82,10 @@ h3 {
 /* Video del Index y Mapa de pagina de Contacto */
 .video {
 	@include videoindex;
-iframe {
-	@include videoindex;
-}
+
+	iframe {
+		@include videoindex;
+	}
 }
 
 /* Pagina Poesía*/
@@ -90,6 +97,7 @@ iframe {
 		height: 300px;
 	}
 }
+
 p {
 	font-family: $font-family_2;
 	text-align: center;
@@ -100,12 +108,12 @@ p {
 }
 
 
-.autor{
+.autor {
 	text-decoration: none;
-	font-style:italic;
+	font-style: italic;
 }
 
-.caligrama{
+.caligrama {
 	max-width: 100%;
 	height: auto;
 	width: 400px;
@@ -116,34 +124,37 @@ p {
 /* Fin Pagina Poesía */
 
 /* Literatura */
-.literaturamoderna{
-	h2{
+.literaturamoderna {
+	h2 {
 		text-align: center;
 		font-size: medium;
 		font-weight: 1000;
 		margin-top: 25px;
 	}
-	img{
+
+	img {
 		max-width: 100%;
 		width: 800px;
 		height: auto;
 	}
-	h4{
-		text-align: center;
-    font-size: medium;
-    font-weight: 1000;
-    margin-top: 25px;
-	}
-}
 
-.policiales{
-	h4{
+	h4 {
 		text-align: center;
 		font-size: medium;
 		font-weight: 1000;
-		margin-top: 25px;	
+		margin-top: 25px;
 	}
-	img{
+}
+
+.policiales {
+	h4 {
+		text-align: center;
+		font-size: medium;
+		font-weight: 1000;
+		margin-top: 25px;
+	}
+
+	img {
 		max-width: 100%;
 		height: auto;
 		max-height: 400px;
@@ -154,18 +165,20 @@ p {
 
 /* Pagina de Contacto */
 
-.secconinfo{
-	p{
-	font-family: $font-family_2;
-	text-align: center;
-	font-weight: 500;
-	font-style: normal;
-	line-height: 1.6;
+.secconinfo {
+	p {
+		font-family: $font-family_2;
+		text-align: center;
+		font-weight: 500;
+		font-style: normal;
+		line-height: 1.6;
 	}
-	div{
+
+	div {
 		text-align: center;
 	}
-	img{
+
+	img {
 		max-width: 100%;
 		height: auto;
 	}
@@ -179,19 +192,21 @@ p {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 
-	form{
+	form {
 		margin: 30px;
-		background: linear-gradient(to right, #da8d8d, rgb(240, 155, 155) );
+		background: linear-gradient(to right, #da8d8d, rgb(240, 155, 155));
 		border-radius: 20px;
 	}
 
-	.h2decontactanos{
+	.h2decontactanos {
 		position: relative;
-		top:0px;
+		top: 0px;
 	}
-	.btn{
+
+	.btn {
 		position: relative;
 		top: 20px;
 	}
 }
+
 /* Fin de pagina de Contacto */

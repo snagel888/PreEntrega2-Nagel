@@ -67,6 +67,7 @@ main a {
 }
 .grid img {
   height: 300px;
+  width: 250px;
   padding-left: 50px;
 }
 .grid .col {
