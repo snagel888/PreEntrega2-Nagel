@@ -10,8 +10,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	height: 170px;
 
+	/* Logo */
 	.animate__animated {
 		display: flex;
 		border-radius: 200px;
@@ -24,8 +24,12 @@ header {
 	}
 
 	h1 {
+		font-family: $font-family_3;
 		color: $color_5;
 		align-self: center;
+		font-size: 50px;
+		overflow: auto;
+		text-shadow: 2px 2px 4px black;
 	}
 
 	/* Logo de ayuda */
@@ -34,10 +38,11 @@ header {
 		position: relative;
 		right: 30px;
 		margin-left: 20px;
+		overflow-x: hidden;
 	}
 
 	.bi:hover {
-		color: black;
+		color: red;
 	}
 }
 

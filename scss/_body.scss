@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(to right, #E0EAFC, rgb(168, 60, 60));
+	background-color: #cab986;
 	font-family: $font-family_1;
 	position: relative;
 	padding-bottom: 3em;
@@ -24,13 +24,15 @@ body {
 	margin-left: 10px;
 
 	.navbar-brand {
-		background: linear-gradient(to right, #E0EAFC, rgb(168, 60, 60));
-		text-decoration: underline;
-		border-radius: 10px;
+		text-decoration: none;
+		border-radius: 13px;
+		border-color: black;
+		text-shadow: 0.5px 0.5px 1px black;
+		border-style: solid;
+		border-width: 2px;
 
 		&:hover {
 			color: $color_4;
-			background: black;
 		}
 	}
 }
@@ -38,20 +40,27 @@ body {
 /* fin navegador de bootstrap*/
 
 /* Comienzo del Index */
+/* (el h1 está en _header) */
 
 main {
 	p {
-		font-family: $font-family_2;
+		font-family: $font-family_4;
 		text-align: center;
 		font-weight: 500;
 		font-style: normal;
 		line-height: 1.6;
+		font-size: 25px;
+		margin-bottom: 0;
 	}
 
 	a {
-		text-decoration: none;
+		text-decoration: underline;
 		color: black;
 	}
+}
+
+hr{
+	opacity: .50;
 }
 
 /* Grid + Imagenes del Index + h2 de Section*/
@@ -89,6 +98,10 @@ h3 {
 }
 
 /* Pagina Poesía*/
+
+.carousel{
+	margin-top: 7	0px;
+
 .carousel-item {
 	img {
 		margin: auto;
@@ -97,39 +110,77 @@ h3 {
 		height: 300px;
 	}
 }
-
-p {
-	font-family: $font-family_2;
-	text-align: center;
-	font-weight: 500;
-	font-style: oblique;
-	line-height: 1.6;
-	margin-top: 25px;
 }
 
-
-.autor {
+.sectionpoesia{
+p {
+	font-family: $font-family_4;
+	text-align: center;
+	font-weight: 500;
+	line-height: 1.6;
+	font-size: 20px;
+	margin-bottom: 0;
+}
+h3 {
 	text-decoration: none;
 	font-style: italic;
 }
-
-.caligrama {
-	max-width: 100%;
-	height: auto;
-	width: 400px;
-	margin-top: 25px;
 }
 
+.divdepoesia{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+    align-content: center;
+	align-items: center;
+	div{
+		display: flex;
+		flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+	}
+	.divconpoema {
+		flex-direction: column;
+		margin-left: 25px;
+		border-style: solid;
+		border-color: black;
+		border-radius: 10px;
+	}
+	p{
+		font-family: "Oswald", sans-serif;
+	}
+	h4{
+		font-style: italic;
+		text-shadow: 0.5px 0.5px 1px black;
+	}
+.caligrama{
+		max-width: 100%;
+		width: 400px;
+		height: 600px;
+}
+img {	
+	max-width: 100%;
+	height: 400px;
+	width: 600px;
+	margin-top: 25px;
+}
+.divmario{
+	flex-direction: column;
+		margin-left: 25px;
+		border-style: solid;
+		border-color: black;
+		border-radius: 10px;
+}
+}
 
 /* Fin Pagina Poesía */
 
 /* Literatura */
 .literaturamoderna {
 	h2 {
-		text-align: center;
-		font-size: medium;
-		font-weight: 1000;
-		margin-top: 25px;
+		@include titulos1y2;
+		font-size: 25px;
 	}
 
 	img {
@@ -163,28 +214,36 @@ p {
 
 /* Fin de Literatura */
 
-/* Pagina de Contacto */
+/* Pagina de Nosotros */
 
 .secconinfo {
 	p {
+		margin-top: 25px;
 		font-family: $font-family_2;
 		text-align: center;
 		font-weight: 500;
 		font-style: normal;
 		line-height: 1.6;
+		font-size: 20px;
 	}
 
 	div {
+		display: flex;
 		text-align: center;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 
 	img {
 		max-width: 100%;
 		height: auto;
+		height:400px;
+		width:400px;
 	}
 }
 
-/* Fin de pagina de contacto */
+/* Fin de pagina de Nosotros */
 
 /* Pagina de Contacto */
 .contacto {
@@ -194,8 +253,10 @@ p {
 
 	form {
 		margin: 30px;
-		background: linear-gradient(to right, #da8d8d, rgb(240, 155, 155));
+		background-color: #cab986;
 		border-radius: 20px;
+		border-color: black;
+		border-style: solid;
 	}
 
 	.h2decontactanos {

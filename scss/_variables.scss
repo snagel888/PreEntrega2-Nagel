@@ -12,8 +12,12 @@ $color_5: white;
 $color_6: black;
 $font-family_1: 'Montserrat';
 $font-family_2: 'Roboto', sans-serif;
+$font-family_3: 'PT Sans', sans-serif;
+$font-family_4: 'Oswald', sans-serif; 
 
-
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap";
+@import "https://fonts.googleapis.com/css2?family=PT+Sans&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+
 /* reglas generales */

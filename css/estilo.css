@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* reglas generales */
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap";
+@import "https://fonts.googleapis.com/css2?family=PT+Sans&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
 * {
@@ -9,7 +11,7 @@
 
 /* reglas generales */
 body {
-  background: linear-gradient(to right, #E0EAFC, rgb(168, 60, 60));
+  background-color: #cab986;
   font-family: "Montserrat";
   position: relative;
   padding-bottom: 3em;
@@ -32,37 +34,45 @@ body .whatsapp2 {
   margin-left: 10px;
 }
 .navbar .navbar-brand {
-  background: linear-gradient(to right, #E0EAFC, rgb(168, 60, 60));
-  text-decoration: underline;
-  border-radius: 10px;
+  text-decoration: none;
+  border-radius: 13px;
+  border-color: black;
+  text-shadow: 0.5px 0.5px 1px black;
+  border-style: solid;
+  border-width: 2px;
 }
 .navbar .navbar-brand:hover {
   color: red;
-  background: black;
 }
 
 /* fin navegador de bootstrap*/
 /* Comienzo del Index */
+/* (el h1 está en _header) */
 main p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 500;
   font-style: normal;
   line-height: 1.6;
+  font-size: 25px;
+  margin-bottom: 0;
 }
 main a {
-  text-decoration: none;
+  text-decoration: underline;
   color: black;
+}
+
+hr {
+  opacity: 0.5;
 }
 
 /* Grid + Imagenes del Index + h2 de Section*/
 .grid h2 {
-  font-size: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  text-decoration: underline 2px;
-  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 0.5px 0.5px 1px black;
 }
 .grid img {
   height: 300px;
@@ -78,12 +88,11 @@ main a {
 /* (el h1 está en _header) */
 /* h3 */
 h3 {
-  font-size: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  text-decoration: underline 2px;
-  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 0.5px 0.5px 1px black;
 }
 
 /* Video del Index y Mapa de pagina de Contacto */
@@ -99,41 +108,85 @@ h3 {
 }
 
 /* Pagina Poesía*/
-.carousel-item img {
+.carousel {
+  margin-top: 7 0px;
+}
+.carousel .carousel-item img {
   margin: auto;
   max-width: 400px;
   max-height: 400px;
   height: 300px;
 }
 
-p {
-  font-family: "Roboto", sans-serif;
+.sectionpoesia p {
+  font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 500;
-  font-style: oblique;
   line-height: 1.6;
-  margin-top: 25px;
+  font-size: 20px;
+  margin-bottom: 0;
 }
-
-.autor {
+.sectionpoesia h3 {
   text-decoration: none;
   font-style: italic;
 }
 
-.caligrama {
+.divdepoesia {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.divdepoesia div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.divdepoesia .divconpoema {
+  flex-direction: column;
+  margin-left: 25px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+}
+.divdepoesia p {
+  font-family: "Oswald", sans-serif;
+}
+.divdepoesia h4 {
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+.divdepoesia .caligrama {
   max-width: 100%;
-  height: auto;
   width: 400px;
+  height: 600px;
+}
+.divdepoesia img {
+  max-width: 100%;
+  height: 400px;
+  width: 600px;
   margin-top: 25px;
+}
+.divdepoesia .divmario {
+  flex-direction: column;
+  margin-left: 25px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
 }
 
 /* Fin Pagina Poesía */
 /* Literatura */
 .literaturamoderna h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
-  font-size: medium;
-  font-weight: 1000;
-  margin-top: 25px;
+  text-decoration: underline;
+  text-shadow: 0.5px 0.5px 1px black;
+  font-size: 25px;
 }
 .literaturamoderna img {
   max-width: 100%;
@@ -160,23 +213,31 @@ p {
 }
 
 /* Fin de Literatura */
-/* Pagina de Contacto */
+/* Pagina de Nosotros */
 .secconinfo p {
+  margin-top: 25px;
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 500;
   font-style: normal;
   line-height: 1.6;
+  font-size: 20px;
 }
 .secconinfo div {
+  display: flex;
   text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .secconinfo img {
   max-width: 100%;
   height: auto;
+  height: 400px;
+  width: 400px;
 }
 
-/* Fin de pagina de contacto */
+/* Fin de pagina de Nosotros */
 /* Pagina de Contacto */
 .contacto {
   display: flex;
@@ -185,8 +246,10 @@ p {
 }
 .contacto form {
   margin: 30px;
-  background: linear-gradient(to right, #da8d8d, rgb(240, 155, 155));
+  background-color: #cab986;
   border-radius: 20px;
+  border-color: black;
+  border-style: solid;
 }
 .contacto .h2decontactanos {
   position: relative;
@@ -210,7 +273,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  height: 170px;
+  /* Logo */
   /* Logo de ayuda */
 }
 header .animate__animated {
@@ -224,17 +287,22 @@ header .animate__animated {
   margin-right: 20px;
 }
 header h1 {
+  font-family: "PT Sans", sans-serif;
   color: white;
   align-self: center;
+  font-size: 50px;
+  overflow: auto;
+  text-shadow: 2px 2px 4px black;
 }
 header .bi {
   color: white;
   position: relative;
   right: 30px;
   margin-left: 20px;
+  overflow-x: hidden;
 }
 header .bi:hover {
-  color: black;
+  color: red;
 }
 
 /* Fin de Header */
