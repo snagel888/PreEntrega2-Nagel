@@ -57,7 +57,7 @@ main {
 /* Grid + Imagenes del Index + h2 de Section*/
 .grid {
 	h2 {
-		@include h2yh3;
+		@include titulos1y2;
 	}
 
 	img {
@@ -76,7 +76,7 @@ main {
 
 /* h3 */
 h3 {
-	@include h2yh3;
+	@include titulos1y2;
 }
 
 /* Video del Index y Mapa de pagina de Contacto */

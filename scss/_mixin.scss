@@ -1,0 +1,20 @@
+@mixin imagenesindex {
+	height: 300px;
+	width: 250px;
+	padding-left: 50px;
+}
+
+@mixin titulos1y2 {
+	font-size: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	text-decoration: underline 2px;
+	font-weight: bold;
+}
+
+@mixin videoindex {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}

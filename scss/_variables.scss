@@ -14,31 +14,6 @@ $font-family_1: 'Montserrat';
 $font-family_2: 'Roboto', sans-serif;
 
 
-@mixin imagenesindex {
-	height: 300px;
-	width: 250px;
-	padding-left: 50px;
-}
-
-@mixin h2yh3 {
-	font-size: 20px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	text-align: center;
-	text-decoration: underline 2px;
-	font-weight: bold;
-}
-
-@mixin videoindex {
-	display: flex;
-	align-self: center;
-	justify-content: center;
-}
-
-
-
-/* @keyframes animacion {} */
-
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
 /* reglas generales */
