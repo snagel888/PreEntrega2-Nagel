@@ -59,7 +59,7 @@ main {
 	}
 }
 
-hr{
+hr {
 	opacity: .50;
 }
 
@@ -99,47 +99,50 @@ h3 {
 
 /* Pagina Poesía*/
 
-.carousel{
-	margin-top: 7	0px;
+.carousel {
+	margin-top: 7 0px;
 
-.carousel-item {
-	img {
-		margin: auto;
-		max-width: 400px;
-		max-height: 400px;
-		height: 300px;
+	.carousel-item {
+		img {
+			margin: auto;
+			max-width: 400px;
+			max-height: 400px;
+			height: 300px;
+		}
 	}
 }
+
+.sectionpoesia {
+	p {
+		font-family: $font-family_4;
+		text-align: center;
+		font-weight: 500;
+		line-height: 1.6;
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+
+	h3 {
+		text-decoration: none;
+		font-style: italic;
+	}
 }
 
-.sectionpoesia{
-p {
-	font-family: $font-family_4;
-	text-align: center;
-	font-weight: 500;
-	line-height: 1.6;
-	font-size: 20px;
-	margin-bottom: 0;
-}
-h3 {
-	text-decoration: none;
-	font-style: italic;
-}
-}
-
-.divdepoesia{
+.divdepoesia {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	flex-direction: column;
-    align-content: center;
+	align-content: center;
 	align-items: center;
-	div{
+
+	div {
 		display: flex;
 		flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+		align-items: center;
+		justify-content: center;
 	}
+
 	.divconpoema {
 		flex-direction: column;
 		margin-left: 25px;
@@ -147,31 +150,36 @@ h3 {
 		border-color: black;
 		border-radius: 10px;
 	}
-	p{
+
+	p {
 		font-family: "Oswald", sans-serif;
 	}
-	h4{
+
+	h4 {
 		font-style: italic;
 		text-shadow: 0.5px 0.5px 1px black;
 	}
-.caligrama{
+
+	.caligrama {
 		max-width: 100%;
 		width: 400px;
 		height: 600px;
-}
-img {	
-	max-width: 100%;
-	height: 400px;
-	width: 600px;
-	margin-top: 25px;
-}
-.divmario{
-	flex-direction: column;
+	}
+
+	img {
+		max-width: 100%;
+		height: 400px;
+		width: 600px;
+		margin-top: 25px;
+	}
+
+	.divmario {
+		flex-direction: column;
 		margin-left: 25px;
 		border-style: solid;
 		border-color: black;
 		border-radius: 10px;
-}
+	}
 }
 
 /* Fin Pagina Poesía */
@@ -238,8 +246,8 @@ img {
 	img {
 		max-width: 100%;
 		height: auto;
-		height:400px;
-		width:400px;
+		height: 400px;
+		width: 400px;
 	}
 }
 

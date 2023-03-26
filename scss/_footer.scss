@@ -22,8 +22,10 @@ footer {
 	a {
 		color: $color_1;
 	}
+
 	a {
 		text-decoration: underline;
+
 		&:hover {
 			color: $color_4;
 		}
